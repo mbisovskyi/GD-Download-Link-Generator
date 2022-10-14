@@ -34,8 +34,54 @@ img {
   width: 100%;
 }
 
+hr {
+  border: 1px solid #db6400;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  background-color: #005490;
+}
+
+.instructions {
+  font-size: 1.6rem;
+  width: 30%;
+  height: 100vh;
+  background-color: white;
+  padding-top: 5rem;
+  color: rgb(6, 44, 128);
+}
+
+.instructions h2 {
+  font-size: 3.5rem;
+  color: var(--color-sec);
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.instructions h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 2px;
+  background-color: #db6400;
+}
+
+.instructions ol {
+  padding: 1rem 0 0 1.5rem;
+}
+
+.instructions ol a {
+  color: var(--color-sec);
+  text-decoration: none;
 }
